@@ -13,5 +13,9 @@ fn main() {
     // exercises::rectangles::start();
     // exercises::enums::start();
     // exercises::matches::start();
-    exercises::iflet::start();
+    // exercises::iflet::start();
+    // exercises::vectors::start();
+    // exercises::strings::start();
+    // exercises::hash_maps::start();
+    exercises::ch8practise::start();
 }
