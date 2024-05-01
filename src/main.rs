@@ -17,5 +17,6 @@ fn main() {
     // exercises::vectors::start();
     // exercises::strings::start();
     // exercises::hash_maps::start();
-    exercises::ch8practise::start();
+    // exercises::ch8practise::start();
+    exercises::errors::start();
 }

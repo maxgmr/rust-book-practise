@@ -2,6 +2,7 @@ pub mod branches;
 pub mod ch3practise;
 pub mod ch8practise;
 pub mod enums;
+pub mod errors;
 pub mod functions;
 pub mod guessing_game;
 pub mod hash_maps;
