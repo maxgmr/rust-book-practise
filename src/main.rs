@@ -21,5 +21,6 @@ fn main() {
     // exercises::errors::start();
     // exercises::generics::start();
     // exercises::traits::start();
-    exercises::lifetimes::start();
+    // exercises::lifetimes::start();
+    exercises::testing::start();
 }

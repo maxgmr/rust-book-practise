@@ -16,6 +16,7 @@ pub mod refs_and_borrowing;
 pub mod slices;
 pub mod strings;
 pub mod structs;
+pub mod testing;
 pub mod traits;
 pub mod variables;
 pub mod vectors;
