@@ -18,5 +18,8 @@ fn main() {
     // exercises::strings::start();
     // exercises::hash_maps::start();
     // exercises::ch8practise::start();
-    exercises::errors::start();
+    // exercises::errors::start();
+    // exercises::generics::start();
+    // exercises::traits::start();
+    exercises::lifetimes::start();
 }
