@@ -70,3 +70,7 @@ mod back_of_house {
 
     fn cook_order() {}
 }
+
+pub fn add(a: i32, b: i32) -> i32 {
+    a + b
+}

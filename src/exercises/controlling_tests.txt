@@ -1,0 +1,18 @@
+HELP
+cargo test options:                 cargo test --help
+Test binary options:                cargo test -- --help
+
+CARGO TEST
+Run single test:                    cargo test <test name>
+Run filtered tests:                 cargo test <match value>
+    - A test's module becomes part of its
+      name. Can run all tests in a module
+      by filtering on the module's name.
+Run one integration file's tests:   cargo test --test <file name>
+
+
+CARGO BINARY
+No parallel for tests:              cargo test -- --test-threads=1
+Show printed vals of passing tests: cargo test -- --show-output
+Run only ignored tests:             cargo test -- --ignored
+Run all tests (including ignored):  cargo test -- --include-ignored

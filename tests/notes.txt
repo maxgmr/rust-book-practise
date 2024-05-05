@@ -1,0 +1,5 @@
+This is where integration tests are stored (unit tests are
+stored in the same file with #[cfg(test)]\n mod tests{})
+
+Cargo treats the tests directory specially and compiles files
+in this directory only when cargo test is run.
