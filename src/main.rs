@@ -22,5 +22,7 @@ fn main() {
     // exercises::generics::start();
     // exercises::traits::start();
     // exercises::lifetimes::start();
-    exercises::testing::start();
+    // exercises::testing::start();
+    // exercises::closures::start();
+    exercises::iterators::start();
 }
