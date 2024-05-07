@@ -1,0 +1,83 @@
+CUSTOMISING BUILDS WITH RELEASE PROFILES
+Release Profiles: Predefined, customisable profiles with different
+    configs that allow programmers to have more control over 
+    various compiler options
+
+Two Main Cargo Profiles:
+    i. dev: cargo build; good defaults for development
+    ii. release: cargo build --release; good for release
+
+Override Default Settings: Add [profile.*] sections in Cargo.toml.
+    e.g. Set optimisation level of dev to 1 (override default 0):
+        [profile.dev]
+        opt-level = 0
+
+
+PUBLISHING CRATE TO CRATES.IO
+Make Useful Documentation Comments: /// generates HTML
+    documentation for public API items intended for programmers
+    interested in knowing how to USE your crate as opposed to how
+    it's IMPLEMENTED. Place just before the item they're
+    documenting.
+    e.g.
+        /// Adds one to the number given.
+        ///
+        /// # Examples
+        ///
+        /// ```
+        /// let arg = 5;
+        /// let answer = my_crate::add_one(arg);
+        ///
+        /// assert_eq!(6, answer);
+        /// ```
+        pub fn add_one(x: i32) -> i32 {
+            x + 1
+        }
+    - Generate the HTML documentation with 'cargo doc'. Goes to
+      target/doc directory.
+    - 'cargo doc open' opens the results in a browser.
+    - 'cargo test' runs the examples as tests!
+    Commonly Used Sections:
+        - Panics: Scenarios in which fn should panic
+        - Errors: If fn returns Result, describe the different
+                  errors which may occur
+        - Safety: If fn unsafe, explain why. Cover invariants
+                  the fn expects callers to uphold.
+
+Commenting Contained Items: //! adds documentation to the item
+    that contains the comments rather than the items following
+    the comments.
+    - Typically used inside crate root file (src/lib.rs) to
+      document the crate/module as a whole.
+    e.g.
+        //! # My crate
+        //!
+        //! `my_crate` is a collection of utilities to make
+        //! performing certain calculations more convenient.
+
+Exporting a Convenient Public API With pub use
+    - Can re-export modules at the top level to make them more
+      accessible, e.g. (src/lib.rs),
+        pub use self::kinds::PrimaryColour;
+        pub use self::utils::mix;
+
+        pub mod kinds {
+            pub enum PrimaryColour
+            ...
+        }
+
+        pub mod utils {
+            pub fn mix
+            ...
+        }
+
+Adding Metadata to New Crate: Publish with 'cargo publish'
+    [package]
+    name
+    license = http://spdx.org/licenses/
+    version = http://semver.org/
+    edition
+    description
+
+Deprecation: 'cargo yank --vers <version>'
+    - Stops new projects from depending on that crate version
