@@ -16,6 +16,7 @@ pub mod ownership;
 pub mod rectangles;
 pub mod refs_and_borrowing;
 pub mod slices;
+pub mod smart_pointers;
 pub mod strings;
 pub mod structs;
 pub mod testing;

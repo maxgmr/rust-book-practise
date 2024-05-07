@@ -24,5 +24,6 @@ fn main() {
     // exercises::lifetimes::start();
     // exercises::testing::start();
     // exercises::closures::start();
-    exercises::iterators::start();
+    // exercises::iterators::start();
+    exercises::smart_pointers::start();
 }
