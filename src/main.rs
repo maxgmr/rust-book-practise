@@ -32,5 +32,6 @@ fn main() {
     // exercises::extensible_concurrency::start();
     // exercises::traits_for_common_behaviour::start();
     // exercises::state_pattern_traditional_oop::start();
-    exercises::state_pattern_rusty::start();
+    // exercises::state_pattern_rusty::start();
+    exercises::patterns::start();
 }

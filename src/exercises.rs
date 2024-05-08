@@ -15,6 +15,7 @@ pub mod lifetimes;
 pub mod matches;
 pub mod message_parsing;
 pub mod ownership;
+pub mod patterns;
 pub mod rectangles;
 pub mod refs_and_borrowing;
 pub mod shared_state_concurrency;
