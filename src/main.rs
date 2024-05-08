@@ -25,5 +25,9 @@ fn main() {
     // exercises::testing::start();
     // exercises::closures::start();
     // exercises::iterators::start();
-    exercises::smart_pointers::start();
+    // exercises::smart_pointers::start();
+    // exercises::threads::start();
+    // exercises::message_parsing::start();
+    // exercises::shared_state_concurrency::start();
+    exercises::extensible_concurrency::start();
 }
