@@ -33,5 +33,10 @@ fn main() {
     // exercises::traits_for_common_behaviour::start();
     // exercises::state_pattern_traditional_oop::start();
     // exercises::state_pattern_rusty::start();
-    exercises::patterns::start();
+    // exercises::patterns::start();
+    // exercises::unsafe_rust::start();
+    // exercises::advanced_traits::start();
+    // exercises::advanced_types::start();
+    // exercises::advanced_functions_closures::start();
+    exercises::macros::start();
 }
